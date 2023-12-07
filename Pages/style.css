@@ -1,0 +1,122 @@
+body {
+  background-image: url('../Images/bg.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#container {
+background-color: rgba(258,258,265,0.9);
+max-width: 1200px;
+    margin: 0 auto;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    margin: 20px;
+    text-align: center;
+    color: #0661D7;
+    font-size: 30px;
+    font-family: palatino, serif;
+}
+
+nav {
+    background-color: #D2EEFC;
+    padding: 25px 0;
+    margin: 0px
+}
+
+nav ul {
+    text-align: center;
+    font-family: palatino, serif;
+}
+
+nav ul li {
+    display: inline;
+    margin: 30px 80px;
+}
+
+nav ul li a {
+    color: #063B80;
+    font-size: 26px;
+    font-family: palatino, serif;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+#bengi-tab,
+#abc-tab {
+    display: none;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
+.tissue-icon {
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block; /* Set to inline-block to display icons in a row */
+    width: 20%; /* Set a width to control the number of icons in a row */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.tissue-icon img, .node-icon img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tissue-icon:hover, .node-icon:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.highlight-link {
+  text-align: center;
+}
+
+.node-icon {
+    text-align: center;
+    margin: 20px auto; /* Set auto for left and right margins to center horizontally */
+    text-decoration: none;
+    color: #333;
+    display: block; /* Set to block to center vertically */
+    width: 20%; /* Set a width to control the number of icons in a row */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D2EEFC;
+}
+
+.introduction-section {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.term {
+    color: #0661D7;
+}
+
+
+

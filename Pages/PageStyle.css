@@ -1,0 +1,77 @@
+
+body {
+    background-image: url('../Images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    background-color: rgba(258,258,265,0.9);
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #D2EEFC;
+    color: #0661D7;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: palatino, serif;
+}
+
+.headerp {
+    color: black;
+}
+
+h1 {
+    margin: 0;
+}
+
+p, li, h2 {
+    font-size: 26px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#summary,
+#chromosome-icons {
+    margin: 20px 0;
+}
+
+.chromosome-icon {
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block; /* Set to inline-block to display icons in a row */
+    width: 18%; /* Set a width to control the number of icons in a row */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.chromosome-icon:hover {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+.chromosome-icon img {
+    width: 70px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D2EEFC;
+}
+
+.term {
+    color: #0661D7;
+}

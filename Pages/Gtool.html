@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Genome Graph Tool</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Gtool.js"></script>
+    <style>
+        #bengi-tab {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+    <h1>Genome Graph</h1>
+    <p></p>
+</header>
+
+    <div>
+            <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showHomeContent()">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="showBengiContent()">BENGI</a></li>
+            <li><a href="javascript:void(0);" onclick="showABCContent()">ABC</a></li>
+        </ul>
+    </nav>
+    </div>
+
+<section id="home-tab" class="introduction-section">
+    <div>
+        <h2>Welcome to Genome Graph Explorer</h2>
+        <p>
+            Uncover the secrets of the genome with our interactive visualization tool by delving into the intricate links between genes and enhancers across specific tissues and cell types, providing a visual journey for genomic enthusiasts, bioinformaticians, and medical researchers.
+            Our curated graphs offer an in-depth analysis into the regulatory CIS elements and genes, providing valuable insights for decoding the language of the genome.
+        </p>
+    </div>
+
+    <div class="definitions">
+        <h2>Datasets Explored</h2>
+        <p>
+            We have worked with <strong class="term">Benchmark of candidate Enhancer-Gene Interactions (BENGI)</strong> and <strong class="term">Activity by Contact Model (ABC)</strong> datasets which are processed and considered to be a standard benchmark in the field of genomics, each revealing a unique perspective.
+        </p>
+    </div>
+
+    <section id="gene-enhancer-definition" class="definitions">
+        <div class="definition-group">
+            <h2>What are Genes & Enhancers?</h2>
+            <p>
+                <strong class="term">Genes</strong> are segments of DNA that contain instructions for building and maintaining the functional components of living organisms. They provide the code for synthesizing proteins, which are the building blocks of cells and perform various functions in the body. Genes are fundamental to the genetic makeup of an organism, influencing traits, behaviors, and physiological processes. Understanding genes is key to unraveling genetic diseases, inheritance patterns, and the overall functioning of living organisms.
+            </p>
+            <!-- Additional Gene Information -->
+        </div>
+
+        <div class="definition-group">
+            <p>
+                <strong class="term">Enhancers</strong> are regulatory DNA sequences that modulate the activity of nearby genes. They enhance or increase the transcription of genes by interacting with specific proteins and influencing the binding of RNA polymerase, an enzyme essential for gene transcription. Enhancers play a crucial role in spatial and temporal regulation of gene expression, ensuring that genes are activated in the right cells and at the right times. Studying enhancers provides insights into the complex network of gene regulation, tissue-specific expression patterns, and the dynamic control of genetic information.</span>
+            </p>
+            <!-- Additional Enhancer Information -->
+        </div>
+
+        <div class="definition-group">
+            <h2>Why are Gene-Enhancer links important?</h2>
+            <p>
+                <strong class="term">Gene-Enhancer links</strong> refer to the physical interactions between enhancer regions and their target genes. These links establish the regulatory relationships that govern the precise timing and level of gene expression. Understanding gene-enhancer links is vital for deciphering the intricacies of gene regulation, cell differentiation, and the orchestration of biological processes. Identifying these links helps researchers comprehend how genetic information is utilized and controlled in various cellular contexts, providing insights into development, health, and disease.</span>
+            </p>
+            <!-- Additional Gene-Enhancer Link Information -->
+        </div>
+    </section>
+</section>
+
+
+
+
+<section id="bengi-tab">
+    <h2><strong class="term">BENGI Dataset</strong>: Enhancer-Gene Links</h2>
+    <div>
+        <p>
+        We have curated data from the Bengi dataset, focusing on enhancer-gene links in human genome across several tissues.
+        The dataset is derived from the GTEx (Genotype-Tissue Expression) project, specifically the liver tissue,
+        and utilizes the GTEX benchmark file. This benchmark file contains associations between enhancers and their
+        corresponding genes, providing valuable insights into regulatory interactions within the genome.
+    </p>
+
+    <!-- Key Steps List -->
+    <ol>
+        <li><strong class="term">Data Curated from Git Repo:</strong> The Bengi dataset was sourced from a Git repository,
+            ensuring the latest and most relevant data for analysis.
+        </li>
+        <li><strong class="term">Enhancer-Gene Mapping:</strong> The enhancer-gene links were established using the liver-specific
+            data from the GTEX benchmark file. This information helps in understanding the regulatory relationships
+            between enhancers and genes.
+        </li>
+        <li><strong class="term">CCRE Accession Numbers:</strong> Enhancer regions were identified using CCRE (Constitutive
+            Cis-Regulatory Elements) accession numbers obtained from the human genome bed file (GRCh38.bedfile).
+        </li>
+        <li><strong class="term">Graphical Representation:</strong> Interactive graphs have been generated to visually represent the
+            enhancer-gene links, providing an intuitive understanding of the regulatory landscape within the Bengi dataset.
+        </li>
+    </ol>
+
+    </div>
+
+
+    <!-- Tissue-Specific Analysis with Icons -->
+    <div class="tissue-analysis">
+        <h2>Tissue-Specific Analysis</h2>
+        <!-- Liver Icon -->
+        <a href="LiverPage.html" class="tissue-icon">
+            <img src="../Images/liver.png" alt="Liver Icon">
+            <p><strong>Liver</strong></p>
+        </a>
+
+        <a href="OvariesPage.html" class="tissue-icon">
+            <img src="../Images/uterus.png" alt="Ovaries Icon">
+            <p><strong>Ovaries</strong></p>
+        </a>
+
+        <a href="PancreasPage.html" class="tissue-icon">
+            <img src="../Images/pancreas.png" alt="Pancreas Icon">
+            <p><strong>Pancreas</strong></p>
+        </a>
+
+        <a href="StomachPage.html" class="tissue-icon">
+            <img src="../Images/stomach.png" alt="Stomach Icon">
+            <p><strong>Stomach</strong></p>
+        </a>
+
+        <a href="ThyroidPage.html" class="tissue-icon">
+            <img src="../Images/thyroid.png" alt="Thyroid Icon">
+            <p><strong>Thyroid</strong></p>
+        </a>
+
+    </div>
+</section>
+
+<section id="abc-tab">
+    <div>
+        <h2><strong class="term">ABC Dataset</strong>: Enhancer-Gene Links</h2>
+    <p>
+        Curated from the ABC Git repository, the dataset explores enhancer-gene links in the human genome across various tissues.
+        The dataset comprises 131 unique cell types and 513 target genes, offering comprehensive insights into regulatory interactions.
+    </p>
+
+    <ol>
+        <li><strong class="term">Data Curated from Git Repo:</strong> The ABC dataset is sourced from a Git repository, ensuring up-to-date and relevant data for analysis.</li>
+        <li><strong class="term">Graph Generation:</strong> Graphs are generated by considering chromosome start and end as enhancer regions, with associated target genes forming nodes.</li>
+        <li><strong class="term">ABC Score-Based Edges:</strong> Graph edges between enhancers and genes are determined by ABC scores.</li>
+        <li><strong class="term">Color Mappings:</strong> Nodes are color-coded, with light blue representing enhancer regions and green representing target genes.</li>
+    </ol>
+    </div>
+
+    <br>
+    <div>
+       <a href="../ABCGraphs/data_graph_with_colored_edges_and_thickness.html" class="node-icon">
+        <img src="../Images/node.png" alt="node Icon">
+        <p><strong>Explore ABC Graph</strong></p>
+    </a>
+    </div>
+    <div class="tissue-analysis">
+        <h2><strong class="term">Cell Type Specific Analysis</strong></h2>
+        <p>
+        Explore specific graphs tailored to each of the 131 cell types within the ABC dataset.
+        </p>
+
+        <a href="../ABCGraphs/adrenal_gland-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Adrenal Gland</strong></p>
+        </a>
+
+        <a href="..ABCGraphs/erythroblast-Corces2016_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Erythroblast</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/heart_ventricle-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Heart Ventricle</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/hepatocyte-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Hepatocyte</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/keratinocyte-Roadmap_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Keratinocyte</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/osteoblast-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Osteoblast</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/skeletal_muscle_myoblast-Roadmap_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Skeletal Myoblast</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/white_adipose-Loft2014_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>White Adipose Loft</strong></p>
+        </a>
+
+    </div>
+    <br>
+    <!-- Graph Statistics Plots -->
+    <div class="graph-statistics">
+        <h2><strong class="term">Graph Statistics Plots</strong></h2>
+        <img src="../Images/ABC_Graph_Metrics_Bar_Plot.png" alt="Graph Statistics Plot 1">
+    </div>
+    <div>
+        <img src="../Images/ABC_Graph_Metrics_Cluster_Map.png" alt="Graph Statistics Plot 2", style="max-width: 100%">
+    </div>
+    <br>
+
+    <div class="heatmap-container">
+        <h2><strong class="term">Clustered Heatmap of target genes across diverse cell types</strong></h2>
+    <img src="../Images/ABC_Clustermap_Plot.png" alt="Clustered Heatmap Plot", style="max-width: 100%">
+    </div>
+
+
+</section>
+
+<!-- Add additional sections or features as needed -->
+
+<footer>
+    <p>&copy; 2023 TSM</p>
+</footer>
+</div>
+
+
+
+
+<!-- Add your JavaScript scripts or link external scripts here -->
+
+</body>
+</html>
