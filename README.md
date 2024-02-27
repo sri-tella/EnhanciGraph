@@ -1,6 +1,6 @@
 EnhanciGraph: Genome Visualization Tool
 
-EnhanciGraph is a tool designed to visualize enhancer-gene interactions within the human genome, offering detailed insights into cellular and tissue-level dynamics.
+EnhanciGraph is a tool designed to visualize enhancer-gene interactions within the human genome, offering detailed insights into cellular and tissue-level regulatory genomic landscape.
 
 Datasets Explored:
 
