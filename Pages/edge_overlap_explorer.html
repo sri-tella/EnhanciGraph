@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Overlap Explorer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Edge Overlap Explorer</h1>
+    </header>
+
+    <!-- Introduction section -->
+    <section class="introduction-section">
+        <h2>Introduction</h2>
+        <p>
+            The Edge Overlap Explorer allows you to investigate overlapping edges between selected cell types in the ABC dataset.
+            Enhancer-gene interactions play a crucial role in gene regulation, influencing various biological processes.
+            Understanding the overlapping edges provides insights into shared regulatory mechanisms across different cell types.
+        </p>
+        <!-- Add more details about the legend and importance here -->
+    </section>
+
+    <!-- Dropdown for selecting cell types -->
+    <section class="celltype-section">
+        <h2>Select Cell Types</h2>
+        <p>
+            Select up to five cell types to explore the overlapping enhancer gene links accross cell types.
+        </p>
+        <label for="cell-type-dropdown">Choose cell types:</label>
+        <select id="cell-type-dropdown">
+        <option value="">Select a cell type</option>
+        <!-- JavaScript will populate options here -->
+    </select>
+    <button onclick="exploreCellTypes()" >Explore</button>
+        <div id="selected-cell-types-info" class="selected-cell-types-list"></div>
+    </section>
+
+    <div id="loading" style="display: none;">
+    <img src="https://media.giphy.com/media/YlmI36YAWe7KScC7hK/giphy.gif" alt="Loading...">
+<!--    <p>Loading...</p>-->
+</div>
+
+    <div><!-- Button to show the graph -->
+    <button id="show-graph-button" class="hidden" onclick="showGraph()">Show Graph</button>
+        </div>
+
+    <button id="display-stats-button" style="display: none;">Display Graph Statistics</button>
+
+<!-- Container to display graph statistics -->
+<div id="graph-stats" ></div>
+
+</div>
+
+
+
+    <footer>
+    <p>&copy; 2023 TSM</p>
+</footer>
+
+</div>
+<script src="edgeOverlap.js"></script>
+</body>
+</html>

@@ -47,13 +47,12 @@ nav ul li a:hover{
 }
 
 #bengi-tab,
-#abc-tab {
+#abc-tab{
     display: none;
     padding: 30px;
     border-radius: 10px;
     margin: 20px 0;
 }
-
 
 .tissue-icon {
     text-align: center;
@@ -80,23 +79,40 @@ nav ul li a:hover{
   text-align: center;
 }
 
+.section-with-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    padding: 20px; /* Add padding to create space around the content */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+.node-container {
+    display: flex; /* Use flexbox to display items side by side */
+    justify-content: space-around; /* Center items horizontally with space around */
+}
+
 .node-icon {
     text-align: center;
-    margin: 20px auto; /* Set auto for left and right margins to center horizontally */
     text-decoration: none;
     color: #333;
-    display: block; /* Set to block to center vertically */
-    width: 20%; /* Set a width to control the number of icons in a row */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 20%; /* Adjust width as needed */
+    box-sizing: border-box;
+    padding: 20px; /* Add padding to create space around the content */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.node-icon img {
+    width: 100px; /* Adjust image size as needed */
+    height: auto;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     background-color: #D2EEFC;
 }
 
-.introduction-section {
+.introduction-section, .celltype-section {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -117,6 +133,62 @@ p, li {
 .term {
     color: #0661D7;
 }
+
+label, select, button {
+  font-size: 21px; /* Adjust the font size as needed */
+  padding: 10;
+  margin-bottom: 10px;
+}
+
+#selected-cell-types-info {
+  text-align: left; /* Align content to the left */
+}
+
+.selected-cell-types-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.selected-cell-types-list li {
+  margin-bottom: 10px;
+}
+
+.selected-cell-types-list li span {
+  display: inline-block;
+  width: 35px; /* Adjust width as needed */
+  height: 35px; /* Adjust height as needed */
+  margin-right: 20px;
+}
+
+/* Assign colors to cell types */
+.selected-cell-types-list li span.blue { background-color: lightblue; }
+.selected-cell-types-list li span.green { background-color: lightgreen; }
+.selected-cell-types-list li span.orange { background-color: orange; }
+.selected-cell-types-list li span.pink { background-color: pink; }
+.selected-cell-types-list li span.yellow { background-color: khaki; }
+
+#loading {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#loading img {
+    width: 170px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#show-graph-button {
+    display: none;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 
 
 

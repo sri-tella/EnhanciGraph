@@ -138,7 +138,8 @@
     </div>
 </section>
 
-<section id="abc-tab">
+    <section id="abc-tab">
+
     <div>
         <h2><strong class="term">ABC Dataset</strong>: Enhancer-Gene Links</h2>
     <p>
@@ -155,13 +156,18 @@
     </div>
 
     <br>
-    <div>
+    <div class="node-container">
        <a href="../ABCGraphs/data_graph_with_colored_edges_and_thickness.html" class="node-icon">
         <img src="../Images/node.png" alt="node Icon">
         <p><strong>Explore ABC Graph</strong></p>
-    </a>
+        </a>
+        <a href="edge_overlap_explorer.html" class="node-icon">
+            <img src="../Images/edge_overlap_icon.png" alt="Edge Overlap Icon">
+            <p><strong>Edge Overlap Explorer</strong></p>
+        </a>
     </div>
-    <div class="tissue-analysis">
+    <br>
+    <div class="tissue-analysis section-with-shadow">
         <h2><strong class="term">Cell Type Specific Analysis</strong></h2>
         <p>
         Explore specific graphs tailored to each of the 131 cell types within the ABC dataset.
@@ -172,9 +178,44 @@
         <p><strong>Adrenal Gland</strong></p>
         </a>
 
-        <a href="..ABCGraphs/erythroblast-Corces2016_graph.html" class="tissue-icon">
+        <a href="../ABCGraphs/adipose_tissue-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Adipose Tissue</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/breast_epithelium-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Breast Epithelium</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/cardiac_muscle_cell-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Cardiac Muscle</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/CD14-positive_monocyte-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>CD14 Positive Monocyte</strong></p>
+        </a>
+
+         <a href="../ABCGraphs/dendritic_cell_treated_with_Lipopolysaccharide_0_ng-mL_for_0_hour-Garber2017_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Dendritic Cell</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/erythroblast-Corces2016_graph.html" class="tissue-icon">
         <img src="../Images/cell.png" alt="cell Icon">
         <p><strong>Erythroblast</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/fibroblast_of_lung-Roadmap_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Fibroblast of Lung</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/GM12878-Roadmap_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>GM12878</strong></p>
         </a>
 
         <a href="../ABCGraphs/heart_ventricle-ENCODE_graph.html" class="tissue-icon">
@@ -187,9 +228,29 @@
         <p><strong>Hepatocyte</strong></p>
         </a>
 
+        <a href="../ABCGraphs/induced_pluripotent_stem_cell-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Induced Pluripotent Stem Cell</strong></p>
+        </a>
+
         <a href="../ABCGraphs/keratinocyte-Roadmap_graph.html" class="tissue-icon">
         <img src="../Images/cell.png" alt="cell Icon">
         <p><strong>Keratinocyte</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/large_intestine_fetal-Roadmap_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Large Intestine Fetal</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/megakaryocyte-erythroid_progenitor-Corces2016_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Megakaryocyte</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/natural_killer_cell-Corces2016_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Natural Killer Cell</strong></p>
         </a>
 
         <a href="../ABCGraphs/osteoblast-ENCODE_graph.html" class="tissue-icon">
@@ -197,9 +258,24 @@
         <p><strong>Osteoblast</strong></p>
         </a>
 
+        <a href="../ABCGraphs/placenta-Roadmap_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Placenta</strong></p>
+        </a>
+
         <a href="../ABCGraphs/skeletal_muscle_myoblast-Roadmap_graph.html" class="tissue-icon">
         <img src="../Images/cell.png" alt="cell Icon">
         <p><strong>Skeletal Myoblast</strong></p>
+        </a>
+
+        <a href="../ABCGraphs/T-cell-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>T-cell</strong></p>
+        </a>
+
+         <a href="../ABCGraphs/uterus-ENCODE_graph.html" class="tissue-icon">
+        <img src="../Images/cell.png" alt="cell Icon">
+        <p><strong>Uterus</strong></p>
         </a>
 
         <a href="../ABCGraphs/white_adipose-Loft2014_graph.html" class="tissue-icon">
@@ -210,7 +286,7 @@
     </div>
     <br>
     <!-- Graph Statistics Plots -->
-    <div class="graph-statistics">
+    <div class="graph-statistics section-with-shadow">
         <h2><strong class="term">Graph Statistics Plots</strong></h2>
         <img src="../Images/ABC_Graph_Metrics_Bar_Plot.png" alt="Graph Statistics Plot 1">
     </div>
@@ -219,10 +295,11 @@
     </div>
     <br>
 
-    <div class="heatmap-container">
+    <div class="heatmap-container section-with-shadow">
         <h2><strong class="term">Clustered Heatmap of target genes across diverse cell types</strong></h2>
     <img src="../Images/ABC_Clustermap_Plot.png" alt="Clustered Heatmap Plot", style="max-width: 100%">
     </div>
+        <\section>
 
 
 </section>

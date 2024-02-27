@@ -31,3 +31,4 @@ function showABCContent() {
     bengiTab.style.display = 'none';
     homeTab.style.display = 'none';
 }
+
