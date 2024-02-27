@@ -4,8 +4,10 @@ EnhanciGraph is a tool designed to visualize enhancer-gene interactions within t
 
 Datasets Explored:
 
-BENGI
-ABC
+- BENGI
+- ABC
+
+  
 To run the application, Flask must be installed. Follow these steps:
 
 - Clone the repository to your local machine.
